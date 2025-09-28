@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Website </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Swiper Js -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+    
+</head>
+<body>
+    
+ <!-- Header Navigation Bar HTML  -->
+
+ <header>
+    <div class="logo">
+        <img src="images/logo.png" alt="">
+    </div>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallary">Gallary</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    
+    <!-- Cart Icon -->
+    <div class="cart icons" id="cart">
+        <img src="images/basket_icon.png" alt="">
+        <span id="cartCount">0</span>
+    </div>
+    
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal" style="display: none;">
+        <div class="cart-modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h3>Cart Items</h3>
+            <ul id="cartItemList"></ul>
+        </div>
+    </div>
+    <a href="sign up .html">
+        <button class="btn" >Sign In</button>
+    </a>
+
+</header>
+
+    <!-- Home Section HTML -->
+     <section class="home" id="home">
+        <div class="home-content">
+            <div class="home-text-content">
+                <h1>Delicious <span> Meal </span> to Your <span>  Doorstep</span></h1>
+                <p>Hello,</br>Experience the convenience of fresh, flavorful meals delivered right to your home. Whether you're craving local favorites or something new, our wide range of options guarantees satisfaction for everyone. Fast, reliable, and hassle-free—order now and enjoy!.</p>
+                <button><div> <a href="#menu">Order Now</div> <i class='bx bx-right-arrow-alt'></a></i></button>
+            </div>
+            <div class="home-img">
+                <img src="images/main_img.png" alt="">
+            </div>
+        </div>
+     </section>
+
+
+     <!-- About Section HTML -->
+
+     <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-img">
+                <img src="images/02.JPG" alt="">
+            </div>
+            <div class="about-text">
+                <div class="heading">
+                    <h1><span>About</span> Us</h1>
+                    <p></p>
+                </div>
+
+                <h2>Why do you Choose Us?</h2><br><br>
+                <h3>Fast Delivery:</h3>
+                <p> Get your food hot and fresh in no time.</p>
+                <br>
+                <h3>Wide Variety: </h3>
+                <p>Choose from a wide range of cuisines and restaurants.</p>
+                <br>
+                <h3>Easy Payment Options:</h3>
+                <p> Multiple payment methods to suit your convenience.</p>
+                <br>
+
+                <button><div> <a href="About us.html">Read more</div> <i class='bx bx-right-arrow-alt'></a></i></button>
+            </div>
+        </div>
+     </section>
+
+
+     <section class="menu" id="menu">
+        <div class="heading-text">
+            <div class="heading">
+                <h1><span>Explore Our</span> Menu</h1>
+                <p></p>
+            </div>
+            <p>Savor the foodie wonderland within the pages of our menu, from your favorite comfort foods to exciting new tastes-the possibilities are endless. Whether you want just a little something or a full meal, we have it all for you. Browse through and indulge in what you like!.</p>
+        </div>
+
+        <div class="search-icons">
+            <iframe src="search bar.html" width="1000" height="100" ></iframe>
+
+        
+
+
+            <div class="menu-content">
+                <div class="product-box">
+                <div class="product-img">
+                    <img src="images/rice and curry.webp" alt="">
+                </div>
+                <small>Product Category</small>
+                <h2 class="product-name">Rice and curry</h2>
+
+                <img src="images/rating_starts.png" alt="">
+                <p class="product-description">Thank you so much, Now you have the food made to your liking in one place.</p>
+                <div class="addToSection">
+                    <span class="price">Rs 500</span>
+        
+                    <div class="cart-icon">
+        
+                        <a href="#"><i class='bx bx-cart'></i></a>
+                        <div class="popup"><p>Add To Cart</p> <i class='bx bx-heart'></i></div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/Fried rice.jpg" alt="">
+                </div>
+                <small>Product Category</small>
+                <h2 class="product-name">Fried Rice</h2>
+                <img src="images/rating_starts.png" alt="">
+                <p class="product-description">Thank you so much, Now you have the food made to your liking in one place.</p>
+                <div class="addToSection">
+                    <span class="price">Rs 650</span>
+        
+                    <div class="cart-icon">
+        
+                        <a href="#"><i class='bx bx-cart'></i></a>
+                        <div class="popup"><p>Add To Cart</p> <i class='bx bx-heart'></i></div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/ChickenFriedRice.webp" alt="">
+                </div>
+                <small>Product Category</small>
+                <h2 class="product-name">Chicken Fried Rice</h2>
+                <img src="images/rating_starts.png" alt="">
+                <p class="product-description">Thank you so much, Now you have the food made to your liking in one place.</p>
+                <div class="addToSection">
+                    <span class="price">RS 700</span>
+        
+                    <div class="cart-icon">
+        
+                        <a href="#"><i class='bx bx-cart'></i></a>
+                        <div class="popup"><p>Add To Cart</p> <i class='bx bx-heart'></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/sea food rice.jpeg" alt="">
+                </div>
+                <small>Product Category</small>
+                <h2 class="product-name">Sea Food Rice</h2>
+                <img src="images/rating_starts.png" alt="">
+                <p class="product-description">Thank you so much, Now you have the food made to your liking in one place.</p>
+                <div class="addToSection">
+                    <span class="price">RS 1000</span>
+        
+                    <div class="cart-icon">
+        
+                        <a href="#"><i class='bx bx-cart'></i></a>
+                        <div class="popup"><p>Add To Cart</p> <i class='bx bx-heart'></i></div>
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/Chicken biriyani.jpg" alt="">
+                </div>
+                <small>Product Category</small>
+                <h2 class="product-name">Chicken Biryani</h2>
+
+                <img src="images/rating_starts.png" alt="">
+                <p class="product-description">Thank you so much, Now you have the food made to your liking in one place.
+                </p>
+                <div class="addToSection">
+                    <span class="price">RS 950</span>
+        
+                    <div class="cart-icon">
+        
+                        <a href="#"><i class='bx bx-cart'></i></a>
+                        <div class="popup"><p>Add To Cart</p> <i class='bx bx-heart'></i></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/nasiguran.jpeg" alt="">
+                </div>
+                <small>Product Category</small>
+                <h2 class="product-name">Nasiguran Rice</h2>
+                <img src="images/rating_starts.png" alt="">
+                <p class="product-description">Thank you so much, Now you have the food made to your liking in one place.</p>
+                <div class="addToSection">
+                    <span class="price">RS 850</span>
+        
+                    <div class="cart-icon">
+        
+                        <a href="#"><i class='bx bx-cart'></i></a>
+                        <div class="popup"><p>Add To Cart</p> <i class='bx bx-heart'></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/Pasta.jpg" alt="">
+                </div>
+                <small>Product Category</small>
+                <h2 class="product-name">Pasta</h2>
+                <img src="images/rating_starts.png" alt="">
+                <p class="product-description">Thank you so much, Now you have the food made to your liking in one place.</p>
+                <div class="addToSection">
+                    <span class="price">RS 500</span>
+        
+                    <div class="cart-icon">
+        
+                        <a href="#"><i class='bx bx-cart'></i></a>
+                        <div class="popup"><p>Add To Cart</p> <i class='bx bx-heart'></i></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/Spaghetti.png" alt="">
+                </div>
+                <small>Product Category</small>
+                <h2 class="product-name">Spaghetti</h2>
+                <img src="images/rating_starts.png" alt="">
+                <p class="product-description"> Thank you so much, Now you have the food made to your liking in one place.</p>
+                <div class="addToSection">
+                    <span class="price">RS 600</span>
+        
+                    <div class="cart-icon">
+        
+                        <a href="#"><i class='bx bx-cart'></i></a>
+                        <div class="popup"><p>Add To Cart</p> <i class='bx bx-heart'></i></div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/Sea Food Spaghetti.png" alt="">
+                </div>
+                <small>Product Category</small>
+                <h2 class="product-name">Sea Food Spaghetti</h2>
+
+                <img src="images/rating_starts.png" alt="">
+                <p class="product-description">Thank you so much, Now you have the food made to your liking in one place.</p>
+                <div class="addToSection">
+                    <span class="price">RS 900</span>   
+                <div class="cart-icon">
+        
+                        <a href="#"><i class='bx bx-cart'></i></a>
+                        <div class="popup"><p>Add To Cart</p> <i class='bx bx-heart'></i></div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/Noodles.png" alt="">
+                </div>
+                <small>Product Category</small>
+                <h2 class="product-name">Noodles</h2>
+                <img src="images/rating_starts.png" alt="">
+                <p class="product-description">Thank you so much, Now you have the food made to your liking in one place.</p>
+                <div class="addToSection">
+                    <span class="price">RS 500</span>
+                    <div class="cart-icon">
+
+                        <a href="#"><i class='bx bx-cart'></i></a>
+                        <div class="popup"><p>Add To Cart</p> <i class='bx bx-heart'></i></div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/kottu.jpeg" alt="">
+                </div>
+                <small>Product Category</small>
+                <h2 class="product-name">kottu</h2>
+                <img src="images/rating_starts.png" alt="">
+                <p class="product-description">Thank you so much, Now you have the food made to your liking in one place.</p>
+                <div class="addToSection">
+                    <span class="price">RS 600</span>
+        
+                    <div class="cart-icon">
+        
+                        <a href="#"><i class='bx bx-cart'></i></a>
+                        <div class="popup"><p>Add To Cart</p> <i class='bx bx-heart'></i></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/chicken masala kottu.jpeg" alt="">
+                </div>
+                <small>Product Category</small>
+                <h2 class="product-name"> Chicken masala kottu</h2>
+                <img src="images/rating_starts.png" alt="">
+                <p class="product-description">Thank you so much, Now you have the food made to your liking in one place.</p>
+                <div class="addToSection">
+                    <span class="price">RS 800</span>
+        
+                    <div class="cart-icon">
+        
+                        <a href="#"><i class='bx bx-cart'></i></a>
+                        <div class="popup"><p>Add To Cart</p> <i class='bx bx-heart'></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="menu-next">
+            
+            <button>1</button>
+            <a href="page 2.html"><button>2</button></a>
+            <p>Next...</p>
+            <a href="page 2.html"><button><i class='bx bx-right-arrow-alt'></i></button></a>
+
+        </div>
+     </section>
+
+     <section class="gallary" id="gallary">
+        <div class="heading-text">
+            <div class="heading">
+                <h1><span> Our</span> Gallary</h1>
+                <p></p>
+            </div>
+            <p>Now you have the food made to your liking<br> in one place.</p>
+        </div>
+
+        <div class="gallary-content">
+            <div class="gallary-box">
+                <img src="images/gallary_2.jpg" class="gallary-img" alt="">
+                <div class="gallary-overlay">
+                    <img src="images/logo.png" alt="">
+
+                    <p>Feast your eyes on a selection of mouthwatering dishes, crafted to perfection. From savory starters to indulgent desserts, each dish is made with the finest ingredients to guarantee freshness and flavor. Browse through the images and find your favorite meal!
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="gallary-box">
+                <img src="images/gallary_1.jpg" class="gallary-img" alt="">
+                <div class="gallary-overlay">
+                    <img src="images/logo.png" alt="">
+
+                    <p>Feast your eyes on a selection of mouthwatering dishes, crafted to perfection. From savory starters to indulgent desserts, each dish is made with the finest ingredients to guarantee freshness and flavor. Browse through the images and find your favorite meal!
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="gallary-box">
+                <img src="images/Hot_dog.jpg" class="gallary-img" alt="">
+                <div class="gallary-overlay">
+                    <img src="images/logo.png" alt="">
+
+                    <p>Feast your eyes on a selection of mouthwatering dishes, crafted to perfection. From savory starters to indulgent desserts, each dish is made with the finest ingredients to guarantee freshness and flavor. Browse through the images and find your favorite meal!
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="gallary-box">
+                <img src="images/gallary_6.jpg" class="gallary-img" alt="">
+                <div class="gallary-overlay">
+                    <img src="images/logo.png" alt="">
+
+                    <p>Feast your eyes on a selection of mouthwatering dishes, crafted to perfection. From savory starters to indulgent desserts, each dish is made with the finest ingredients to guarantee freshness and flavor. Browse through the images and find your favorite meal!
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="gallary-box">
+                <img src="images/gallary_5.jpg" class="gallary-img" alt="">
+                <div class="gallary-overlay">
+                    <img src="images/logo.png" alt="">
+
+                    <p>Feast your eyes on a selection of mouthwatering dishes, crafted to perfection. From savory starters to indulgent desserts, each dish is made with the finest ingredients to guarantee freshness and flavor. Browse through the images and find your favorite meal!
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="gallary-box">
+                <img src="images/buger.jpg" class="gallary-img" alt="">
+                <div class="gallary-overlay">
+                    <img src="images/logo.png" alt="">
+
+                    <p>Feast your eyes on a selection of mouthwatering dishes, crafted to perfection. From savory starters to indulgent desserts, each dish is made with the finest ingredients to guarantee freshness and flavor. Browse through the images and find your favorite meal!
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="menu-next">
+            
+            <button>1</button>
+            <a href="Gallery 2.html"><button>2</button></a>
+            <a href="Gallery 3.html"><button>3</button></a>
+            <a href="Gallery 2.html"><button><i class='bx bx-right-arrow-alt'></i></button></a>
+     
+        </div>
+     </section>
+
+     <section class="order" id="order">
+        <div class="heading-text">
+            <div class="heading">
+                <h1><span> Order</span> Now</h1>
+                <p></p>
+            </div>
+            <p>Now you have the food made to your liking in one place.  some great pleasure in some things.</p>
+        </div>
+
+        <div class="order-section">
+            <div class="order-img">
+                <img src="images/order_image.png" alt="">
+            </div>
+            <div class="order-text">
+                <h2>Get Favourite dish at door <span>step</span></h2>
+                <p>The rice and curry options are rich in flavor, with perfectly spiced meats and vibrant vegetables. Their seafood is fresh, especially the prawn and crab dishes, which are cooked to perfection.On the international side, the pastas and grilled meats are decent but not standout. While they’re satisfying, they don’t quite capture the authentic flavors you might expect from a dedicated Western restaurant. Here we accuse her of bearing the smallest pains of the body, when she is freed from that, the most worthy of the gentle?</p>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Address">
+                        <input type="text" placeholder="Location">
+                    </div>
+                    <textarea name="" placeholder="Describe Your Location in brief explanation" id="" cols="30" rows="10"></textarea>
+
+                    <button>SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+     </section>
+     <section class="testimonial">
+        <div class="heading-text">
+            <div class="heading">
+                <h1><span> Customer</span> Review</h1>
+                <p></p>
+            </div>
+            <p>Now you have the food made to your liking in one place. <br>some great pleasure in some things.</p>
+        </div>
+
+        <div class="slider-container swiper">
+            <div class="slider-wrapper">
+                <div class="slider-list swiper-wrapper">
+                    <div class="slider-card swiper-slide">
+                        <img src="images/review_1.png" alt="">
+                        <h2>Abigail Simon</h2>
+                        <p>Ezy Eats offers a delightful fusion of local and international cuisines. Their signature rice and curry dishes are flavorful, while their western options like burgers and pasta cater to diverse tastes. The ambiance is casual and welcoming, perfect for a quick meal or a relaxed dining experience. Prices are affordable, and the service is friendly. A great spot for a tasty and budget-friendly meal!.</p>
+                        <div class="social-media">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="slider-card swiper-slide">
+                        <img src="images/review_2.png" alt="">
+                        <h2>Brown Simon</h2>
+                        <p>Ezy Eats offers a delightful fusion of local and international cuisines. Their signature rice and curry dishes are flavorful, while their western options like burgers and pasta cater to diverse tastes. The ambiance is casual and welcoming, perfect for a quick meal or a relaxed dining experience. Prices are affordable, and the service is friendly. A great spot for a tasty and budget-friendly meal!.</p>
+                        <div class="social-media">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="slider-card swiper-slide">
+                        <img src="images/review_3.png" alt="">
+                        <h2>Esther Simon</h2>
+                        <p> Ezy Eats offers a delightful fusion of local and international cuisines. Their signature rice and curry dishes are flavorful, while their western options like burgers and pasta cater to diverse tastes. The ambiance is casual and welcoming, perfect for a quick meal or a relaxed dining experience. Prices are affordable, and the service is friendly. A great spot for a tasty and budget-friendly meal!.</p>
+                        <div class="social-media">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="slider-card swiper-slide">
+                        <img src="images/review_4.png" alt="">
+                        <h2>William Simon</h2>
+                        <p> Ezy Eats offers a delightful fusion of local and international cuisines. Their signature rice and curry dishes are flavorful, while their western options like burgers and pasta cater to diverse tastes. The ambiance is casual and welcoming, perfect for a quick meal or a relaxed dining experience. Prices are affordable, and the service is friendly. A great spot for a tasty and budget-friendly meal!.</p>
+                        <div class="social-media">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="slider-card swiper-slide">
+                        <img src="images/testimonial1.jpg" alt="">
+                        <h2>Gideon Lucas</h2>
+                        <p> Ezy Eats offers a delightful fusion of local and international cuisines. Their signature rice and curry dishes are flavorful, while their western options like burgers and pasta cater to diverse tastes. The ambiance is casual and welcoming, perfect for a quick meal or a relaxed dining experience. Prices are affordable, and the service is friendly. A great spot for a tasty and budget-friendly meal!.</p>
+                        <div class="social-media">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="slider-card swiper-slide">
+                        <img src="images/testimonial2.jpg" alt="">
+                        <h2>Sarah Lucas</h2> Ezy Eats offers a delightful fusion of local and international cuisines. Their signature rice and curry dishes are flavorful, while their western options like burgers and pasta cater to diverse tastes. The ambiance is casual and welcoming, perfect for a quick meal or a relaxed dining experience. Prices are affordable, and the service is friendly. A great spot for a tasty and budget-friendly meal!.</p>
+                        <p>
+                        <div class="social-media">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                 <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+     </section>
+
+     <section class="contact" id="contact">
+        <div class="heading-text">
+            <div class="heading">
+                <h1><span> Contact</span> Us</h1>
+                <p></p>
+            </div>
+            <p >Now you have the food made to your liking in one place. <br> some great pleasure in some things.</p>
+        </div>
+
+        <div class="contact-section">
+            <div class="contact-img">
+                <img src="images/contact_img.png" alt="">
+            </div>
+
+            <div class="contact-text">
+                <h1 style="font-size: 50px;"><span>Our</span> Kitchen </h1>
+                
+                <p><i class='bx bx-map'></i> Matara</p> <p><i class='bx bx-phone'></i> Tell : 041 855 2317 <br>071 855 2317 </p><p><i class='bx bx-envelope'></i> Email: EZYEats@gmail.com</p>
+
+
+                <div class="social-media">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+            </div>
+            
+        </div>
+          
+        <div class="contact-input">
+            <h2>Send Us <span>Email</span> to be one of our best Customer</h2>
+            <div>
+                <input type="text" placeholder="Enter Email">
+                <button>Submit</button>
+            </div>
+        </div>
+     </section>
+
+    
+    
+
+     <!-- Footer Section -->
+      
+         <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div>
+                        <img src="images/logo.png" alt="">
+                    </div>
+
+                    <p>EZY Eats excels in Sri Lankan cuisine, offering rich rice, curry, and fresh seafood. International pastas and grilled meats are decent but not authentic Western flavors.</p>
+                    <div class="social-media">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-center">
+                    <h2>CONTENT</h2>
+                    
+
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#gallary">Gallary</a>
+                    <a href="#order">Order</a>
+                </div>
+
+                <div class="footer-right">
+                    <h2>GET IN TOUCH</h2>
+                    <p><i class='bx bx-map'></i>Matara.</p>
+                    <p><i class='bx bx-phone'></i> Tell : 041 855 2317 <br> 071 855 2317</p>
+                    <p><i class='bx bx-envelope'></i> Email: EZYEats@gmail.com</p>
+                    
+                </div>
+            </div>
+            <hr>
+
+            <p class="copyright">Copyright &copy; 2024 By BIHF | All Right Reserved</p>
+        </footer>
+  
+
+     
+<!-- Swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Scroll Relveal -->
+
+   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+<!-- Main javascript link  -->
+   <script src="main.js"></script>
+</body>
+</html>
