@@ -1,244 +1,578 @@
 <!doctype html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Hansani Fernando - Student at Sabaragamuwa University of Sri Lanka. Passionate about building clean, usable systems." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta
+name="description"
+content="Hansani Fernando - Information Systems undergraduate at Sabaragamuwa University of Sri Lanka. Portfolio showcasing projects, skills, and academic interests."
+
+>
+
   <title>Hansani Fernando — Portfolio</title>
+
+  <!-- Google Font -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="style.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  >
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="wrap">
-    <header>
-      <div><strong>Hansani Fernando</strong></div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a class="btn" href="#contact">Contact</a>
-      </nav>
-    </header>
 
-    <main>
-      <section class="hero">
-        <div class="card">
-          <h1 class="title">Hi, I'm <span class="highlight">Hansani Fernando</span></h1>
-          <p class="muted">
-            I study at Sabaragamuwa University of Sri Lanka. I enjoy building clean, usable systems and learning about Databases, HCI, and Security.
-          </p>
-          <div class="chips">
-            <span class="chip">HTML/CSS</span>
-            <span class="chip">Java</span>
-            <span class="chip">SQL</span>
-            <span class="chip">Python</span>
-            <span class="chip">Database Systems</span>
-            <span class="chip">HCI</span>
-          </div>
-          <p>
-            <a class="btn" href="https://github.com/BIHF" target="_blank">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a class="btn secondary" href="#projects">
-              <i class="fas fa-briefcase"></i> View Projects
-            </a>
-          </p>
-        </div>
-        
-        <div class="card text-center">
-            <img src="images/profile.jpg" alt="Profile Photo" class="profile-img" />
-            <p>Add your profile photo here</p>
-        </div>
+<div class="wrap">
 
+  <!-- ================= HEADER ================= -->
 
-      </section>
+  <header>
+    <div>
+      <strong>
+        <a href="index.html">Hansani Fernando</a>
+      </strong>
+    </div>
 
-      <section id="about">
-        <h2>About Me</h2>
-        <div class="card">
-          <p>
-            I'm a dedicated student at Sabaragamuwa University of Sri Lanka, currently pursuing my degree in Computing. 
-            My academic journey has exposed me to various aspects of computer science, with particular interest in:
-          </p>
-          <div class="about-grid">
-            <div class="about-item">
-              <i class="fas fa-database"></i>
-              <h3>Database Systems</h3>
-              <p>Designing efficient and scalable database solutions</p>
-            </div>
-            <div class="about-item">
-              <i class="fas fa-user-friends"></i>
-              <h3>Human-Computer Interaction</h3>
-              <p>Creating intuitive and user-friendly interfaces</p>
-            </div>
-            <div class="about-item">
-              <i class="fas fa-shield-alt"></i>
-              <h3>Security</h3>
-              <p>Understanding and implementing secure systems</p>
-            </div>
-          </div>
-          <p class="text-center">
-            <strong>Current Courses:</strong> Social Context of Computing, HCI, Database Systems
-          </p>
-        </div>
-      </section>
+```
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a class="btn" href="#contact">Contact</a>
+</nav>
+```
 
-      <section id="projects">
-        <h2>My Projects</h2>
-        <div class="grid">
-          <article class="card project">
-            <div class="project-icon">
-              <i class="fas fa-utensils"></i>
-            </div>
-            <h3>Food Delivery Website</h3>
-            <p>A responsive food delivery platform built with HTML, CSS, and JavaScript. Features include menu browsing, cart functionality, and order tracking system.</p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="button">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/BIHF/Web-Project-" class="button">
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </article>
-          <article class="card project">
-            <div class="project-icon">
-              <i class="fas fa-laptop-code"></i>
-            </div>
-            <h3>OOP Java Application</h3>
-            <p>Object-Oriented Programming project demonstrating core Java concepts including inheritance, polymorphism, and encapsulation through a practical application.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Java</span>
-              <span class="tech-tag">OOP</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="button">
-                <i class="fas fa-download"></i> Download
-              </a>
-              <a href="https://github.com/BIHF/MovieTicketSystem" class="button">
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </article>
-          <article class="card project">
-            <div class="project-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <h3>Academic Portfolio</h3>
-            <p>Personal portfolio website showcasing academic projects, skills, and experiences. Built with modern web technologies and responsive design principles.</p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="button">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/BIHF/HansaniFernando.github.io" class="button">
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
+  </header>
 
-      <section id="skills">
-        <h2>Skills & Technologies</h2>
-        <div class="card">
-          <div class="skills-grid">
-            <div class="skill-category">
-              <h3><i class="fas fa-code"></i> Programming Languages</h3>
-              <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3><i class="fas fa-globe"></i> Web Technologies</h3>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
-              <ul>
-                <li>Git & GitHub</li>
-                <li>VS Code</li>
-                <li>MySQL</li>
-                <li>Figma</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3><i class="fas fa-book"></i> Academic Interests</h3>
-              <ul>
-                <li>Database Systems</li>
-                <li>Human-Computer Interaction</li>
-                <li>Software Engineering</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+  <!-- ================= MAIN ================= -->
 
-      <section id="contact">
-        <h2>Get In Touch</h2>
-        <div class="card">
-          <p class="text-center">I'm always open to discussing new opportunities, projects, or just having a chat about technology!</p>
-          <div class="contact-info">
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <h3>Email</h3>
-                <a href="mailto:imeshahansani2003@gmail.com">imeshahansani2003@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i class="fab fa-linkedin"></i>
-              <div>
-                <h3>LinkedIn</h3>
-                <a href="https://www.linkedin.com/in/hansani-fernando-8008a7274/" target="_blank">linkedin.com/in/hansani-fernando</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i class="fab fa-github"></i>
-              <div>
-                <h3>GitHub</h3>
-                <a href="https://github.com/BIHF" target="_blank">github.com/BIHF</a>
-              </div>
-            </div>
-          </div>
-          <div class="social-links">
-            <a href="https://github.com/BIHF" target="_blank" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/hansani-fernando" target="_blank" aria-label="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:imeshahansani2003@gmail.com" aria-label="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
+  <main>
 
-    <footer class="footer">
-      <p>© <span id="year"></span> Hansani Fernando. Built with ♥ and GitHub Pages.</p>
-    </footer>
+```
+<!-- ================= HERO ================= -->
+<section class="hero">
+
+  <div class="card">
+
+    <h1 class="title">
+      Hi, I'm
+      <span class="highlight">Hansani Fernando</span>
+    </h1>
+
+    <p class="muted">
+      I am an Information Systems undergraduate at Sabaragamuwa
+      University of Sri Lanka. I enjoy building clean, usable systems
+      and learning about databases, HCI, security, and web development.
+    </p>
+
+    <div class="chips">
+      <span class="chip">HTML/CSS</span>
+      <span class="chip">Java</span>
+      <span class="chip">SQL</span>
+      <span class="chip">Python</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">Database Systems</span>
+      <span class="chip">HCI</span>
+    </div>
+
+    <p>
+
+      <!-- GitHub -->
+      <a
+        class="btn"
+        href="https://github.com/BIHF"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-github"></i>
+        GitHub
+      </a>
+
+      <!-- Projects -->
+      <a
+        class="btn secondary"
+        href="#projects"
+      >
+        <i class="fas fa-briefcase"></i>
+        View Projects
+      </a>
+
+    </p>
+
   </div>
 
-  <script src="script.js"></script>
+
+  <!-- Profile -->
+  <div class="card text-center">
+
+    <img
+      src="images/profile.jpg"
+      alt="Hansani Fernando Profile Photo"
+      class="profile-img"
+    >
+
+    <p>Hansani Fernando</p>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+
+  <h2>About Me</h2>
+
+  <div class="card">
+
+    <p>
+      I'm a dedicated Information Systems undergraduate at
+      Sabaragamuwa University of Sri Lanka. My academic journey
+      has introduced me to different areas of computing and
+      information systems.
+    </p>
+
+    <div class="about-grid">
+
+      <!-- Database -->
+      <div class="about-item">
+
+        <i class="fas fa-database"></i>
+
+        <h3>Database Systems</h3>
+
+        <p>
+          Designing and managing efficient database solutions.
+        </p>
+
+      </div>
+
+
+      <!-- HCI -->
+      <div class="about-item">
+
+        <i class="fas fa-user-friends"></i>
+
+        <h3>Human-Computer Interaction</h3>
+
+        <p>
+          Creating intuitive and user-friendly interfaces.
+        </p>
+
+      </div>
+
+
+      <!-- Security -->
+      <div class="about-item">
+
+        <i class="fas fa-shield-alt"></i>
+
+        <h3>Security</h3>
+
+        <p>
+          Learning about secure systems and cybersecurity concepts.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <p class="text-center">
+
+      <strong>Academic Interests:</strong>
+
+      Database Systems,
+      Human-Computer Interaction,
+      Software Engineering,
+      Web Development,
+      Security
+
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+
+  <h2>My Projects</h2>
+
+  <div class="grid">
+
+
+    <!-- PROJECT 1 -->
+    <article class="card project">
+
+      <div class="project-icon">
+        <i class="fas fa-utensils"></i>
+      </div>
+
+      <h3>Food Delivery Website</h3>
+
+      <p>
+        A responsive food delivery platform built using HTML,
+        CSS, and JavaScript. The system includes menu browsing,
+        cart functionality, and order management features.
+      </p>
+
+      <div class="project-tech">
+
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JavaScript</span>
+
+      </div>
+
+      <div class="project-links">
+
+        <!-- Change this to your real deployed website -->
+        <a
+          href="https://github.com/BIHF/Web-Project-"
+          class="button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github"></i>
+          Source Code
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- PROJECT 2 -->
+    <article class="card project">
+
+      <div class="project-icon">
+        <i class="fas fa-laptop-code"></i>
+      </div>
+
+      <h3>OOP Java Application</h3>
+
+      <p>
+        An Object-Oriented Programming project demonstrating
+        Java concepts such as inheritance, polymorphism,
+        encapsulation, and object-oriented design.
+      </p>
+
+      <div class="project-tech">
+
+        <span class="tech-tag">Java</span>
+        <span class="tech-tag">OOP</span>
+
+      </div>
+
+      <div class="project-links">
+
+        <a
+          href="https://github.com/BIHF/MovieTicketSystem"
+          class="button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github"></i>
+          Source Code
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- PROJECT 3 -->
+    <article class="card project">
+
+      <div class="project-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+
+      <h3>Academic Portfolio</h3>
+
+      <p>
+        A personal portfolio website showcasing academic
+        projects, skills, education, and professional interests.
+        Built using HTML, CSS, and JavaScript.
+      </p>
+
+      <div class="project-tech">
+
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JavaScript</span>
+
+      </div>
+
+      <div class="project-links">
+
+        <!-- Portfolio GitHub Repository -->
+        <a
+          href="https://github.com/BIHF/HansaniFernando.github.io"
+          class="button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github"></i>
+          Source Code
+        </a>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+
+  <h2>Skills & Technologies</h2>
+
+  <div class="card">
+
+    <div class="skills-grid">
+
+
+      <!-- Programming -->
+      <div class="skill-category">
+
+        <h3>
+          <i class="fas fa-code"></i>
+          Programming Languages
+        </h3>
+
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>JavaScript</li>
+        </ul>
+
+      </div>
+
+
+      <!-- Web -->
+      <div class="skill-category">
+
+        <h3>
+          <i class="fas fa-globe"></i>
+          Web Technologies
+        </h3>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+      </div>
+
+
+      <!-- Tools -->
+      <div class="skill-category">
+
+        <h3>
+          <i class="fas fa-tools"></i>
+          Tools & Platforms
+        </h3>
+
+        <ul>
+          <li>Git & GitHub</li>
+          <li>VS Code</li>
+          <li>MySQL</li>
+          <li>Figma</li>
+        </ul>
+
+      </div>
+
+
+      <!-- Academic -->
+      <div class="skill-category">
+
+        <h3>
+          <i class="fas fa-book"></i>
+          Academic Interests
+        </h3>
+
+        <ul>
+          <li>Database Systems</li>
+          <li>Human-Computer Interaction</li>
+          <li>Software Engineering</li>
+          <li>Cybersecurity</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+
+  <h2>Get In Touch</h2>
+
+  <div class="card">
+
+    <p class="text-center">
+      I'm open to discussing projects, learning opportunities,
+      and technology-related ideas.
+    </p>
+
+
+    <div class="contact-info">
+
+
+      <!-- Email -->
+      <div class="contact-item">
+
+        <i class="fas fa-envelope"></i>
+
+        <div>
+
+          <h3>Email</h3>
+
+          <a href="mailto:imeshahansani2003@gmail.com">
+            imeshahansani2003@gmail.com
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- LinkedIn -->
+      <div class="contact-item">
+
+        <i class="fab fa-linkedin"></i>
+
+        <div>
+
+          <h3>LinkedIn</h3>
+
+          <a
+            href="https://www.linkedin.com/in/hansani-fernando-8008a7274/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            linkedin.com/in/hansani-fernando
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- GitHub -->
+      <div class="contact-item">
+
+        <i class="fab fa-github"></i>
+
+        <div>
+
+          <h3>GitHub</h3>
+
+          <a
+            href="https://github.com/BIHF"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github.com/BIHF
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Social Links -->
+    <div class="social-links">
+
+      <a
+        href="https://github.com/BIHF"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+
+
+      <a
+        href="https://www.linkedin.com/in/hansani-fernando-8008a7274/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+
+      <a
+        href="mailto:imeshahansani2003@gmail.com"
+        aria-label="Email"
+      >
+        <i class="fas fa-envelope"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+```
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+```
+<p>
+  © <span id="year"></span>
+  Hansani Fernando.
+  Built with HTML, CSS & JavaScript.
+</p>
+```
+
+  </footer>
+
+</div>
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+<!-- Current Year -->
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
